@@ -12,6 +12,10 @@ conflicts_prefer(dplyr::desc)
 
 ######################## 16s Analysis ##################################
 
+# rename readme and license files to lowercase ----------------------------
+file.rename(from='README.md', to = 'readme.md')
+
+
 #metadata
 
 bs_lsu_meta <- read_tsv("data/bs_16s_gsr_metadata.tsv") |>
